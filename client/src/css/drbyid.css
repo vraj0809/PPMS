@@ -1,0 +1,108 @@
+/* General form styling */
+.patient-form {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Section headers */
+.form-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 5px;
+}
+
+/* Group each label + input */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* Labels */
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+/* Inputs & Selects */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f9f9f9;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  background: #fff;
+}
+
+/* Textarea */
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Form actions */
+.form-actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.form-actions button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.form-actions button:hover {
+  background: #0056b3;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .form-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .form-section h2 {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .patient-form {
+    padding: 15px;
+  }
+
+  .form-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
+}
+
